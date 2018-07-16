@@ -36,7 +36,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     ncurses-dev
     
 
-RUN pip install --upgrade setuptools && \
+RUN pip install setuptools && \
     pip install numpy && \
     pip install matplotlib && \
     pip install pandas && \
@@ -49,9 +49,9 @@ RUN pip install --upgrade setuptools && \
     
 #Create Working Directory
 WORKDIR /docker_main
-RUN wget https://sourceforge.net/projects/rnaseq-mats/files/MATS/rMATS.4.0.1.tgz && \
-    tar -jxf rMATS.4.0.1.tgz && \
-    cd rMATS.4.0.1/rMATS-turbo-Linux-UCS4 && \
+RUN wget https://newcontinuum.dl.sourceforge.net/project/rnaseq-mats/MATS/rMATS.4.0.2.tgz && \
+    tar -xzf rMATS.4.0.2.tgz && \
+    cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
     cp rmats.py /usr/bin/
 
 
