@@ -50,8 +50,8 @@ RUN pip install --upgrade setuptools && \
 #Create Working Directory
 WORKDIR /docker_main
 RUN wget https://sourceforge.net/projects/rnaseq-mats/files/MATS/rMATS.4.0.1.tgz && \
-    tar -jxf rMATS.4.0.1.tgz &&
-    cd rMATS.4.0.1/rMATS-turbo-Linux-UCS4 &&
+    tar -jxf rMATS.4.0.1.tgz && \
+    cd rMATS.4.0.1/rMATS-turbo-Linux-UCS4 && \
     cp rmats.py /usr/bin/
 
 
