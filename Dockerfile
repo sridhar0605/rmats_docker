@@ -52,7 +52,9 @@ WORKDIR /docker_main
 RUN wget https://newcontinuum.dl.sourceforge.net/project/rnaseq-mats/MATS/rMATS.4.0.2.tgz && \
     tar -xzf rMATS.4.0.2.tgz && \
     cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
-    cp rmats.py /usr/bin/
+    chmod +x rMATS_C/rMATSexe
+    #cp rmats.py /usr/bin/
+    cp rMATS-turbo-Linux-UCS4/* /usr/bin/
 
 
 
