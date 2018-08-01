@@ -53,7 +53,6 @@ RUN wget https://newcontinuum.dl.sourceforge.net/project/rnaseq-mats/MATS/rMATS.
     tar -xzf rMATS.4.0.2.tgz && \
     cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
     #chmod +x rMATS_C/rMATSexe
-    chmod 777 rmats.py
     chmod +x rmats.py 
     cp rmats.py /usr/bin/
     #cp rMATS-turbo-Linux-UCS4/* /usr/bin/
