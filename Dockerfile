@@ -51,10 +51,15 @@ RUN pip install setuptools && \
 WORKDIR /docker_main
 RUN wget https://newcontinuum.dl.sourceforge.net/project/rnaseq-mats/MATS/rMATS.4.0.2.tgz && \
     tar -xzf rMATS.4.0.2.tgz && \
-    cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
+    #cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
     #chmod +x rMATS_C/rMATSexe
-    ln -s * /usr/bin/
+    #ln -s * /usr/bin/
     #cp rMATS-turbo-Linux-UCS4/* /usr/bin/
+    #cd rMATS.4.0.2/rMATS-turbo-Linux-UCS4 && \
+    cd rMATS.4.0.2 && \
+    #ln -s * /usr/bin/
+    cp -r rMATS-turbo-Linux-UCS4/* /usr/bin && \
+    chmod +x /usr/bin/rmats.py
 
 
 
