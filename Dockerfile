@@ -36,7 +36,7 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     ncurses-dev
     
 
-RUN pip install --upgrade pip && \
+RUN pip install --upgrade pip==9.0.3 && \
     pip install setuptools && \
     pip install numpy && \
     pip install matplotlib && \
