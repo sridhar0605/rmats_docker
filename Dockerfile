@@ -36,7 +36,8 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     ncurses-dev
     
 
-RUN pip install setuptools && \
+RUN pip install --upgrade pip && \
+    pip install setuptools && \
     pip install numpy && \
     pip install matplotlib && \
     pip install pandas && \
