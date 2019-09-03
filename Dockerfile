@@ -45,7 +45,8 @@ RUN pip install --upgrade pip==9.0.3 && \
     pip install pysam && \
     pip install biopython && \
     pip install seaborn && \
-    pip install scikit-learn
+    pip install scikit-learn && \
+    pip install tqdm
     
     
 #Create Working Directory
